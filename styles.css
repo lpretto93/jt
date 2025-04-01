@@ -1,18 +1,3 @@
-In questo codice HTML, il CSS è fondamentale per ottimizzare la presentazione del contenuto e migliorarne la leggibilità. Senza il CSS, la pagina risulterebbe visivamente poco curata, senza immagini di sfondo, separazione tra le sezioni e un layout armonioso. Il CSS è quindi necessario per:
-
-1. **Gestire la visualizzazione delle immagini di sfondo** per ciascuna sezione.
-2. **Gestire la trasparenza delle immagini di sfondo** affinché non interferiscano con la leggibilità del testo.
-3. **Ottimizzare le spaziature** tra gli elementi, migliorando l'aspetto della pagina e la separazione tra le sezioni.
-4. **Colori e tipografia** per migliorare il contrasto e la leggibilità, specialmente su sfondi complessi.
-
-### Miglioramenti Proposti:
-1. **Colori**: Renderò i colori del testo più contrastanti per una migliore leggibilità (ad esempio, usando un colore più scuro per il testo su sfondi chiari).
-2. **Spaziatura**: Aggiungerò margini e padding per dare più respiro al contenuto.
-3. **Tipografia**: Regolerò i font e le dimensioni per garantire che il testo sia facilmente leggibile.
-
-### CSS Ottimizzato:
-
-```css
 /* CSS di base */
 * {
   box-sizing: border-box;
@@ -23,9 +8,9 @@ In questo codice HTML, il CSS è fondamentale per ottimizzare la presentazione d
 body {
   font-family: 'Arial', sans-serif;
   background-color: #fefefe;
-  color: #333; /* Colore più scuro per il testo */
+  color: #333;
   padding: 2rem;
-  line-height: 1.6; /* Migliora la leggibilità */
+  line-height: 1.6;
 }
 
 header {
@@ -44,7 +29,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #d72638;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Aggiunge un po' di ombra per migliorare la leggibilità */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 h2, h3 {
@@ -64,7 +49,7 @@ h3 {
   margin-top: 1.5rem;
 }
 
-/* Stile per la navigazione */
+/* Navigazione */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -81,69 +66,115 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s;
+  text-align: center;
 }
 
 nav a:hover {
   background-color: #a71c2b;
 }
 
-/* Stile per ogni "pagina" */
-.page {
-  page-break-after: always;
-}
-
-.page section {
+/* Sezioni */
+.page section,
+.section-background {
   padding: 3rem;
-  background-color: rgba(255, 255, 255, 0.85); /* Sfumatura semitrasparente per migliorare la leggibilità */
+  background-color: rgba(255, 255, 255, 0.85);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   margin-bottom: 2.5rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra per separare le sezioni */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Aggiungi la classe .section-background per ogni sezione */
+/* Sfondo per ogni sezione */
 #checklist-page {
   background-image: url('images/checklist.jpg');
 }
-
 #aeroporto-page {
   background-image: url('images/aeroporto.jpg');
 }
-
 #alloggio-page {
   background-image: url('images/ryokan.jpg');
 }
-
 #trasporti-page {
   background-image: url('images/trasporti.jpg');
 }
-
 #luoghi-page {
   background-image: url('images/luoghi.jpg');
 }
-
 #frasi-page {
   background-image: url('images/frasi.jpg');
 }
-
 #consigli-page {
   background-image: url('images/consigli.jpg');
 }
-
 #pagamento-page {
   background-image: url('images/pagamento.jpg');
 }
-
 #appunti-page {
   background-image: url('images/appunti.jpg');
 }
-
 #suggerimenti-page {
   background-image: url('images/suggerimenti.jpg');
 }
 
-/* Ottimizzazione per dispositivi mobili */
+/* Traduttore Google */
+#traduttore-google {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 2rem;
+}
+
+#traduttore-google h2 {
+  font-size: 2rem;
+  color: #d72638;
+  margin-bottom: 1.5rem;
+}
+
+#traduttore-google input {
+  width: 70%;
+  max-width: 500px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#traduttore-google button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 1.2rem;
+  background-color: #d72638;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#traduttore-google button:hover {
+  background-color: #a71c2b;
+}
+
+#iframe-container {
+  margin-top: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#google-translate-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+/* Responsive */
 @media screen and (max-width: 600px) {
   body {
     padding: 1rem;
@@ -159,7 +190,7 @@ nav a:hover {
   }
 
   nav a {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin-bottom: 0.5rem;
   }
@@ -172,22 +203,17 @@ nav a:hover {
     font-size: 1.4rem;
   }
 
-  .page section {
+  .page section,
+  .section-background {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
   }
+
+  #traduttore-google input {
+    width: 90%;
+  }
+
+  #traduttore-google button {
+    width: 80%;
+  }
 }
-```
-
-### **Modifiche e Ottimizzazioni:**
-1. **Contrasto**: Ho cambiato il colore del testo in un grigio scuro (`#333`) per migliorarne la leggibilità su sfondi semitrasparenti.
-2. **Spaziatura**: Aumentato il `padding` per ogni sezione, migliorando l'aspetto visivo e la separazione tra le sezioni.
-3. **Tipografia**: Ho utilizzato font più leggibili, e ho regolato la dimensione dei titoli (`h1`, `h2`, `h3`) per migliorare la gerarchia visiva del contenuto.
-4. **Sfondo semitrasparente**: Ho mantenuto gli sfondi semitrasparenti, ma ho migliorato la leggibilità aggiungendo un `background-color` semitrasparente più chiaro, e un'ombra sulle sezioni per separarle meglio dal resto della pagina.
-5. **Navigazione migliorata**: Le voci nel menu di navigazione ora hanno un colore di sfondo più uniforme e un effetto hover che cambia il colore per una maggiore interattività.
-
-### Cosa fare:
-- Sostituisci l'URL delle immagini nel CSS con quelle corrette per il tuo progetto.
-- Il design ora risulta più elegante e leggibile, con una navigazione ben definita e un contenuto ben separato.
-
-Se hai bisogno di ulteriori modifiche, fammi sapere!
