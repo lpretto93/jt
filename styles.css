@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #fefefe;
@@ -60,11 +56,6 @@ nav {
   gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  z-index: 1000;
-  padding: 1rem;
 }
 
 nav a {
@@ -74,54 +65,17 @@ nav a {
   border-radius: 1.5rem;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s;
   text-align: center;
 }
 
 nav a:hover {
   background-color: #a71c2b;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav a:focus, button:focus {
-  outline: 3px solid #a71c2b;
-  outline-offset: 2px;
-}
-
-/* Pulsante flottante */
-.floating-index-button {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 45px;
-  height: 45px;
-  background-color: #d72638;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  z-index: 1100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.floating-index-button:hover {
-  background-color: #a71c2b;
-}
-
-.floating-index-button::after {
-  content: '⌂';
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 /* Sezioni */
 .page section,
 .section-background {
-  position: relative;
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.85);
   background-size: cover;
@@ -129,21 +83,6 @@ nav a:focus, button:focus {
   border-radius: 10px;
   margin-bottom: 2.5rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.section-background::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: 0;
-  border-radius: 10px;
-}
-
-.section-background > * {
-  position: relative;
-  z-index: 1;
 }
 
 /* Sfondo per ogni sezione */
