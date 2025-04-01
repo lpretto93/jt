@@ -1,0 +1,122 @@
+/* CSS per ottimizzare la pagina per dispositivi mobili e desktop */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefefe;
+  color: #1a1a1a;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d72638;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #d72638;
+  border-bottom: 2px solid #d72638;
+  padding-bottom: 0.2rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+nav a {
+  background: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #d72638;
+  color: #fff;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+li, p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+strong {
+  color: #d72638;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+/* Ottimizzazione per dispositivi mobili */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header img {
+    max-width: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    margin-bottom: 1.5rem;
+  }
+}
