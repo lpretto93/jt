@@ -63,6 +63,12 @@ nav a:hover {
 
 section {
   margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);  /* Sfumatura semitrasparente */
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: #333;
+  border-radius: 8px;
 }
 
 ul {
@@ -118,5 +124,6 @@ input[type="text"] {
 
   section {
     margin-bottom: 1.5rem;
+    padding: 1rem;
   }
 }
