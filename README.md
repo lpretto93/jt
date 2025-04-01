@@ -9,7 +9,7 @@ Questa è una guida di viaggio digitale interattiva che offre informazioni utili
 3. **Alloggio**: Opzioni di alloggio, dai ryokan agli hotel economici.
 4. **Trasporti**: Come spostarsi in Giappone, dalle metropolitane ai treni Shinkansen.
 5. **Luoghi da Visitare**: I luoghi imperdibili nelle principali città giapponesi.
-6. **Frasi Utili**: Phrases giapponesi per facilitare la comunicazione.
+6. **Frasi Utili**: Frases giapponesi per facilitare la comunicazione.
 7. **Consigli Generali**: Suggerimenti pratici per il viaggio.
 8. **Metodi di Pagamento**: Come pagare in Giappone (contante, carte, pagamenti mobile).
 9. **Appunti**: Note aggiuntive e personalizzazioni.
