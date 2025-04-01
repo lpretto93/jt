@@ -89,6 +89,35 @@ nav a:focus, button:focus {
   outline-offset: 2px;
 }
 
+/* Pulsante flottante */
+.floating-index-button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  background-color: #d72638;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.floating-index-button:hover {
+  background-color: #a71c2b;
+}
+
+.floating-index-button::after {
+  content: '⌂';
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* Sezioni */
 .page section,
 .section-background {
